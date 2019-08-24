@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PruebaAndroid">
+
+	<!-- Suite para el reporte y configuracion del id del dispositivo -->
+	<parameter name="suite" value="Prueba_Base" />
+	<parameter name="device" value="R58M534J69X" /> <!-- nombre y ID del Dispositivo -->
+
+	<!-- Instalamos una aplicacion en particular o no -->
+	 <parameter name="application" value="none" /> 
+	
+
+	<!-- Indicamos el package y la app_activity de la App -->
+	<parameter name="app_package" value="com.trello" /> 
+	<parameter name="app_activity" value="com.trello.home.HomeActivity" /> 
+
+	<!-- Url del servidor Appium -->
+	<parameter name="url_server" value="http://127.0.0.1:4723/wd/hub" />
+	
+
+	<!-- Parametros para la utilizacion de excel -->
+	<parameter name="ruta_excel"  value="src/test/resources/excels/prueba.xlsx" />
+	<parameter name="hoja" value="Hoja1" />
+
+	<test name="Trello">
+		<classes>
+			<class name="cl.empresa.qa.mobile.android.tests.PruebasTest">
+						 
+				<methods>
+					
+					<include name="pruebaLogin" /> 
+					<!--  <include name="pruebaTablero" />
+					<include name="pruebaTarjeta" /> -->
+					
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
