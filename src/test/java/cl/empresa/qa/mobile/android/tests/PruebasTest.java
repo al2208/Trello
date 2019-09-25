@@ -124,7 +124,7 @@ public void pruebaTarjeta(String ruta_excel, String hoja) {
 	
 	EditarTarjeta edit = new EditarTarjeta (driver, test, TAKE_SS, WAIT);
 	edit.editar(subDir, param.getDescripcion(), param.getTextoCheckList());
-
+	
 	}
 
 @AfterMethod
