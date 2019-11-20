@@ -30,8 +30,8 @@
 				<methods>
 					
 					<include name="pruebaLogin" /> 
-					<!--  <include name="pruebaTablero" />
-					<include name="pruebaTarjeta" /> -->
+					<include name="pruebaTablero" />
+					<include name="pruebaTarjeta" />
 					
 				</methods>
 			</class>
