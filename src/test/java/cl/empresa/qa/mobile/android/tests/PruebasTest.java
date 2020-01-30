@@ -89,6 +89,7 @@ public void pruebaLogin(String ruta_excel, String hoja) {
 	PruebaVO param = new PruebaVO (ruta_excel, hoja);
 	LoginPage login = new LoginPage (driver, test, TAKE_SS, WAIT);
 	login.logearseATrello(param.getUser(), param.getPass(),  subDir);
+
 		
 	}
 @Test
